@@ -1,4 +1,3 @@
-cat > src/routes/orders.js << 'EOF'
 const express = require('express');
 const orderController = require('../controllers/orderController');
 const router = express.Router();
@@ -11,4 +10,4 @@ router.put('/:orderId/status', orderController.updateOrderStatus);
 // Obtener órdenes de un usuario
 router.get('/user/:userId', orderController.getOrdersByUser);
 module.exports = router;
-EOF
+

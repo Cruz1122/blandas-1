@@ -1,4 +1,3 @@
-cat > src/middleware/rateLimiter.js << 'EOF'
 const rateLimit = require('express-rate-limit');
 // Rate limiter muy restrictivo (parte del problema)
 const limiter = rateLimit({

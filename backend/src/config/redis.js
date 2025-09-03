@@ -1,4 +1,3 @@
-cat > src/config/redis.js << 'EOF'
 const redis = require('redis');
 // Redis client sin retry strategy
 const redisClient = redis.createClient({
@@ -18,4 +17,3 @@ redisClient.on('ready', () => {
 // Connect to Redis
 redisClient.connect().catch(console.error);
 module.exports = redisClient;
-EOF

@@ -1,4 +1,3 @@
-cat > src/config/database.js << 'EOF'
 const { Pool } = require('pg');
 // Database configuration con pool muy pequeño
 const dbConfig = {
@@ -32,4 +31,3 @@ pool.query('SELECT NOW()', (err, result) => {
  }
 });
 module.exports = pool;
-EOF
